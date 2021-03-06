@@ -62,7 +62,6 @@ for freq = linspace(0, 100, 1000)
     Vm2 = (G+1j*freq*C)\F;
     W(v) = freq;
     vo2(v) = norm(Vm2(5));
-   % Av(v) = norm(Vm2(5))/10;
     Avlog(v) = 20*log10(norm(Vm2(5))/10);
 end 
     
